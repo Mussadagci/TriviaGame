@@ -1,0 +1,22 @@
+body {
+   background-image: url("../images/background.jpg");
+   font-family: ‘Spicy Rice’, cursive;
+}
+.title {
+   color: white;
+   text-align: center;
+}
+.card-body {
+   font-size: 1.25rem;
+}
+.card {
+   background-color: none !important;
+}
+.possible-answer {
+   background-color: #c8daff;
+}
+.possible-answer:hover {
+   background-color: #6293f9;
+   color: white;
+   transform: rotateY(10deg);
+}
