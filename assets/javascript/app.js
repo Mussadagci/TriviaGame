@@ -12,12 +12,12 @@ var lastAnswer = ''
 $(document).ready(function() { promptStart() });
 
 // fnc for start button and initial display, awaiting user to click to begin the game
-function promptStart() { displayStart("How about playing some trivia, and finding out?", "assets/images/bender-electric.gif", "Start Game") }
+function promptStart() { displayStart("How about playing some trivia, and finding out?", "assets/images/Stewies.gif", "Start Game") }
 
 // fnc for game over, loads play-again btn
 function gameOver() {
    head = "Game Over. Let's see how you did: " + wins + "right & " + losses + " wrong!"
-   displayStart(head, "assets/images/bender-dancing.gif", "Play Again")
+   
 }
 
 // reset variables for new game
@@ -107,14 +107,14 @@ function displayIntermission(head, image) {
     if (answerText) {
         if (answerText == trivia[String(questionNumber)].correct) {
             wins++
-            displayIntermission("You got it right!", "assets/images/bender-high-fives-self.gif")
+            displayIntermission("You got it right!");
         } else {
             losses++
-            displayIntermission("You got it wrong", "assets/images/bender-crying.gif")
+            displayIntermission("You got it wrong");
         }
     }
     else {
-        displayIntermission("You ran out of :mantelpiece_clock:", "assets/images/bender-you-stink.gif")
+        displayIntermission("You ran out of :mantelpiece_clock:");
         losses++
     }
     timer.reset(waitForMessage)
